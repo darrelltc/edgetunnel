@@ -156,6 +156,7 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)，**感谢[Alice Networ
 | URL | `https://blog.cmliussss.com` |❌| 主页反代伪装(支持多url, url之间使用`,`或`换行`作间隔, 乱设容易触发反诈) |  |
 | CFEMAIL | `admin@gmail.com` |❌| CF账户邮箱(与`CFKEY`都填上后, 订阅信息将显示请求使用量, 小白别用) |  |
 | CFKEY | `c6a944b5c956b6c18c2352880952bced8b85e` |❌| CF账户Global API Key(与`CFEMAIL`都填上后, 订阅信息将显示请求使用量, 小白别用) |  |
+| CFPORTS | `2053`,`2096`,`8443` |❌| CF账户标准端口列表 |  |
 
 **注意: 填入`SOCKS5`后将不再启用`PROXYIP`！请二选一使用！！！**
 
@@ -191,17 +192,27 @@ Telegram交流群：[@CMLiussss](https://t.me/CMLiussss)，**感谢[Alice Networ
    /socks5://user:password@127.0.0.1:1080
    ```
 
+**当你的`ADDAPI`可作为`PROXYIP`时，可在`ADDAPI`变量末位添加`?proxyip=true`，即可在生成节点时使用优选IP自身作为`PROXYIP`**
+- 指定 `ADDAPI` 作为 `PROXYIP` 案例
+   ```url
+   https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt?proxyip=true
+   ```
 
 ## Star 星星走起
 [![Stargazers over time](https://starchart.cc/cmliu/edgetunnel.svg?variant=adaptive)](https://starchart.cc/cmliu/edgetunnel)
 
-## 已适配自适应订阅内容
+## 已适配客户端
+### Windows
    - [v2rayN](https://github.com/2dust/v2rayN)
-   - clash.meta（[clash-verge-rev
-](https://github.com/clash-verge-rev/clash-verge-rev)，[Clash Nyanpasu](https://github.com/keiko233/clash-nyanpasu)，~[clash-verge](https://github.com/zzzgydi/clash-verge/tree/main)~，ClashX Meta）
-   - sing-box（SFI）
-
-
+   - clash.meta（[FlClash](https://github.com/chen08209/FlClash)，[clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev)，[Clash Nyanpasu](https://github.com/keiko233/clash-nyanpasu)）
+### IOS
+   - Surge，小火箭
+   - sing-box（[SFI](https://sing-box.sagernet.org/zh/clients/apple/)）
+### 安卓
+   - clash.meta（[ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid)，[FlClash](https://github.com/chen08209/FlClash)）
+   - sing-box（[SFA](https://github.com/SagerNet/sing-box)）
+### MacOS
+   - clash.meta（[FlClash](https://github.com/chen08209/FlClash)）
 
 # 感谢
 [zizifn](https://github.com/zizifn/edgetunnel)、[3Kmfi6HP](https://github.com/3Kmfi6HP/EDtunnel)、[Stanley-baby](https://github.com/Stanley-baby)、[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)、[SHIJS1999](https://github.com/SHIJS1999/cloudflare-worker-vless-ip)、<a href="https://url.cmliussss.com/alice"><img src="https://alicenetworks.net/templates/lagom2/assets/img/logo/logo_big.194980063.png" width="150" height="75" alt="Alice Networks LTD"/></a>、
